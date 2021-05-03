@@ -17,6 +17,9 @@ class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
   void _answerQuestion(){
     setState(() {
+      if(_questionIndex==1){
+        return;
+      }
       _questionIndex++;
     });
     print("Question answered");
